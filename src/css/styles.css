@@ -1,0 +1,13 @@
+@import url(./fonts.css);
+@import url(./header.css);
+@import url(./resetCss.css);
+
+html {
+  background: beige;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
