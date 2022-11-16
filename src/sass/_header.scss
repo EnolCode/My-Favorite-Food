@@ -1,22 +1,19 @@
 @use "colors" as c;
+@use "fonts" as f;
+@use "mixins" as m;
 
-#header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.header__title {
-  font-size: 2em;
-  font-weight: bold;
-  font-family: "bungee";
-}
-
-.header__banner {
-  width: 100%;
-}
-
-img {
-  height: 16em;
+.header {
+  @include m.flex(flex, column, nowrap, center, center);
+  &__title {
+    font-family: "bungee";
+    @include m.font(700, 2em, map-get(c.$colors, "black"));
+  }
+  &__banner {
+    width: 90%;
+    height: 1em;
+  }
+  &__banner-img {
+    width: 100%;
+    height: 15em;
+  }
 }

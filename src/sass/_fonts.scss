@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "bungee";
+  src: url(../assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+$typography: (
+  "primary": "bungee",
+  "secndary": sans-serif,
+  "bold": 700,
+  "fine": 400,
+);

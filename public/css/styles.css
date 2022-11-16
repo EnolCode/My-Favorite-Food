@@ -1,22 +1,29 @@
-#header {
+@import url(resetCss.css);
+
+@font-face {
+  font-family: "bungee";
+  src: url(../assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+.header {
   display: flex;
   flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
-
 .header__title {
-  font-size: 2em;
-  font-weight: bold;
   font-family: "bungee";
+  font-weight: 700;
+  font-size: 2em;
+  color: hsla(0deg, 0%, 0%, 0.842);
 }
-
 .header__banner {
-  width: 100%;
+  width: 90%;
+  height: 1em;
 }
-
-img {
-  height: 16em;
+.header__banner-img {
+  width: 100%;
+  height: 15em;
 }
 
 /*# sourceMappingURL=styles.css.map */
