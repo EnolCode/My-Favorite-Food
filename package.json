@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "name": "my-favorite-food",
+  "description": "This app is dedicated to my favorite food",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "npx sass --watch src/sass/styles.scss:public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnolCode/My-Favorite-Food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnolCode/My-Favorite-Food/issues"
+  },
+  "homepage": "https://github.com/EnolCode/My-Favorite-Food#readme"
+}

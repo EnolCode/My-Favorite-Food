@@ -1,0 +1,17 @@
+@mixin flex($dis, $direction, $wrap, $just, $align) {
+  display: $dis;
+  flex-direction: $direction;
+  flex-flow: $direction $wrap;
+  justify-content: $just;
+  align-items: $align;
+}
+
+@mixin font($wei, $size, $col) {
+  font-weight: $wei;
+  font-size: $size;
+  color: $col;
+}
+
+@mixin border() {
+  border: 2px solid map-get(c.$colors, "orange");
+}

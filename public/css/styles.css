@@ -1,0 +1,22 @@
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "bungee";
+}
+
+.header__banner {
+  width: 100%;
+}
+
+img {
+  height: 16em;
+}
+
+/*# sourceMappingURL=styles.css.map */
