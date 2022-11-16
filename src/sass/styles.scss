@@ -1,3 +1,11 @@
 @use "header";
 @use "colors";
 @use "fonts";
+@use "section-ingredients";
+
+.content {
+  height: 100vh;
+  //   background-color: red;
+  display: flex;
+  flex-direction: column;
+}

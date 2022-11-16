@@ -6,14 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Favorite Food App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/resetCss.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">CABRAMELIZADA</h1>
-      <div class="header__banner">
-        <img src="./assets/pizza-banner.png" alt="Imagen de pizza" class="header__banner-img" />
-      </div>
-    </header>
+    <main class="content">
+      <header class="header">
+        <h1 class="header__title">CABRAMELIZADA</h1>
+        <div class="header__banner">
+          <img src="./assets/pizza-banner.png" alt="Imagen de pizza" class="header__banner-img" />
+        </div>
+      </header>
+      <section class="ingredients">
+        <h2 class="ingredients__title">Selecciona tus ingredientes!</h2>
+        <ul class="ingredients__list">
+          <li class="ingredients__list-ingredient">
+            <input type="checkbox" name="" id="" />3 cucharadas de salsa de queso
+          </li>
+          <li class="ingredients__list-ingredient">
+            <input type="checkbox" name="" id="" />60 gramos de cebolla caramelizada
+          </li>
+          <li class="ingredients__list-ingredient">
+            <input type="checkbox" name="" id="" />7 medallones de queso de cabra
+          </li>
+          <li class="ingredients__list-ingredient">
+            <input type="checkbox" name="" id="" />Bacon crispy al gusto
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
