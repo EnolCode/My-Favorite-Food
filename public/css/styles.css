@@ -1,5 +1,3 @@
-@import url(resetCss.css);
-
 @font-face {
   font-family: "bungee";
   src: url(../assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
@@ -16,14 +14,14 @@
   font-weight: 700;
   font-size: 2em;
   color: hsla(0deg, 0%, 0%, 0.842);
+  margin: 0;
 }
 .header__banner {
   width: 90%;
-  height: 1em;
 }
 .header__banner-img {
   width: 100%;
-  height: 15em;
+  height: 23em;
 }
 
 /*# sourceMappingURL=styles.css.map */
