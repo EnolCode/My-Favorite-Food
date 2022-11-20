@@ -1,0 +1,37 @@
+@use "colors" as c;
+@use "fonts" as f;
+@use "mixins" as m;
+
+.preparation {
+  border-radius: 10px;
+  width: 40%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  &__container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10em;
+    &__image {
+      border-radius: 10px;
+      width: 35%;
+      height: 80%;
+    }
+  }
+  &__text {
+    color: white;
+    width: 80%;
+    &--orange {
+      color: orange;
+      font-size: 1.04em;
+      font-weight: bold;
+    }
+    &-paragraph {
+      margin: 0.7em 0;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 @use "colors";
 @use "fonts";
 @use "section-ingredients";
+@use "section-preparation";
 
 .content {
   height: 100%;
@@ -9,4 +10,11 @@
   flex-direction: column;
   background-color: rgba(231, 42, 42, 0.521);
   justify-content: center;
+}
+
+.container-sections {
+  display: flex;
+  margin-top: 4em;
+
+  // justify-content: space-between;
 }
