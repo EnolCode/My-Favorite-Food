@@ -6,14 +6,19 @@
   @include m.flex(flex, column, nowrap, center, center);
   height: 18em;
   &__title {
-    font-family: "bungee";
-    @include m.font(700, 2em, map-get(c.$colors, "black"));
+    font-family: map-get(f.$typography, "primary");
+    @include m.font(700, 2em, map-get(c.$colors, "white"));
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
   &__banner {
     width: 85%;
     height: 15em;
   }
   &__banner-img {
+    border-radius: 10px;
     height: 100%;
   }
 }

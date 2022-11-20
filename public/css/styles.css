@@ -1,6 +1,10 @@
 @font-face {
   font-family: "bungee";
-  src: url(../assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+  src: url(/public/assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+@font-face {
+  font-family: "uniSans";
+  src: url(/public/assets/fonts/uni_Sans/uni-sans.heavy-caps.otf);
 }
 .header {
   display: flex;
@@ -14,13 +18,18 @@
   font-family: "bungee";
   font-weight: 700;
   font-size: 2em;
-  color: hsla(0deg, 0%, 0%, 0.842);
+  color: hsl(0deg, 0%, 100%);
+}
+.header__title:hover {
+  color: black;
+  cursor: pointer;
 }
 .header__banner {
   width: 85%;
   height: 15em;
 }
 .header__banner-img {
+  border-radius: 10px;
   height: 100%;
 }
 
@@ -31,20 +40,69 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: start;
-  width: 92.5%;
+  width: 22%;
   margin-top: 4em;
+  margin-left: 8em;
+  align-self: start;
+  padding: 0.5em;
+  background: black;
+  font-family: "uniSans";
+  border-radius: 10px;
 }
 .ingredients__list-ingredient {
-  margin: 1em;
+  margin: 1em 0.3em;
   font-weight: 700;
   font-size: 1em;
   color: hsla(0deg, 0%, 0%, 0.842);
+  width: 18em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+.ingredients__list-ingredient--span {
+  width: 3em;
+  height: 1.5em;
+  background-color: gray;
+  display: inline-block;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.ingredients__list-ingredient--span::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/assets/icon-x.png);
+  background-size: 30%;
+  position: relative;
+  top: 20%;
+  left: 15%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+.ingredients__list-ingredient--checkbox {
+  display: none;
+}
+.ingredients__list-ingredient--checkbox:checked ~ .ingredients__list-ingredient--span::after {
+  background-image: url(/public/assets/icono-pizza.png);
+  background-size: 35%;
+  top: 10%;
+  transform: translate(45%);
+}
+.ingredients__title {
+  font-size: 1.2em;
+  color: orange;
 }
 
 .content {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: rgba(231, 42, 42, 0.521);
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

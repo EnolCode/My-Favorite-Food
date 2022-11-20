@@ -1,11 +1,16 @@
 @font-face {
   font-family: "bungee";
-  src: url(../assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+  src: url(/public/assets/fonts/Bungee_Shade/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+  font-family: "uniSans";
+  src: url(/public/assets/fonts/uni_Sans/uni-sans.heavy-caps.otf);
 }
 
 $typography: (
   "primary": "bungee",
-  "secndary": sans-serif,
+  "secondary": "uniSans",
   "bold": 700,
   "fine": 400,
 );
