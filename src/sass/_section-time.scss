@@ -1,0 +1,50 @@
+@use "colors" as c;
+@use "fonts" as f;
+@use "mixins" as m;
+
+.time {
+  width: 22.5%;
+  background-color: black;
+  border-radius: 10px;
+  font-family: map-get(f.$typography, "secondary");
+
+  &__container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80%;
+
+    &__timer {
+      width: 3em;
+      height: 1em;
+      border-radius: 20%;
+      color: orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3.5em;
+    }
+  }
+
+  &__paragraph {
+    color: white;
+  }
+
+  &__button {
+    letter-spacing: 2px;
+    width: 50%;
+    border-radius: 10px;
+    height: 2em;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:active {
+      background: rgba(255, 166, 0, 0.664);
+    }
+  }
+}

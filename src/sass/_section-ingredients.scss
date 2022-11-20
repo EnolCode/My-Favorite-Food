@@ -5,7 +5,7 @@
 .ingredients {
   align-self: end;
   @include m.flex(flex, column, nowrap, center, start);
-  width: 22%;
+  width: 20%;
   margin-left: 8em;
   align-self: start;
   padding: 0.5em;
