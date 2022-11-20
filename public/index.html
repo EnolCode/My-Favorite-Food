@@ -6,14 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Favorite Food App</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/resetCss.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__title">CABRAMELIZADA</h1>
-      <div class="header__banner">
-        <img src="./assets/pizza-banner.png" alt="Imagen de pizza" class="header__banner-img" />
-      </div>
-    </header>
+    <main class="content">
+      <header class="header">
+        <h1 class="header__title">CABRAMELIZADA</h1>
+        <div class="header__banner">
+          <img src="./assets/pizza-banner.png" alt="Imagen de pizza" class="header__banner-img" />
+        </div>
+      </header>
+      <section class="ingredients">
+        <h2 class="ingredients__title">Selecciona los ingredientes:</h2>
+        <ul class="ingredients__list">
+          <label class="ingredients__list--label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Masa gruesa
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Masa fina
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Salsa de queso
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Cebolla caramelizada
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Queso de cabra
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+        </ul>
+        <h2 class="ingredients__title">Añade algún ingrediente extra:</h2>
+        <ul class="ingredients__list">
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Bacon crispy
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Piña
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Aceitunas
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+          <label class="label">
+            <li class="ingredients__list-ingredient">
+              <input type="checkbox" name="" id="" class="ingredients__list-ingredient--checkbox" />
+              Pepperoni
+              <span class="ingredients__list-ingredient--span"></span>
+            </li>
+          </label>
+        </ul>
+      </section>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
