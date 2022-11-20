@@ -15,6 +15,7 @@
   height: 18em;
 }
 .header__title {
+  margin-top: 2em;
   font-family: "bungee";
   font-weight: 700;
   font-size: 2em;
@@ -171,6 +172,16 @@
 }
 .time__button:active {
   background: rgba(255, 166, 0, 0.664);
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+  margin-top: 1em;
+  padding: 1em;
+  color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
 .content {
