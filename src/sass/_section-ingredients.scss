@@ -38,7 +38,7 @@
           display: block;
           width: 100%;
           height: 100%;
-          background-image: url(/public/assets/icon-x.png);
+          background-image: url(public/assets/icon-x.png);
           background-size: 30%;
           position: relative;
           top: 20%;
@@ -50,7 +50,7 @@
       &--checkbox {
         display: none;
         &:checked ~ .ingredients__list-ingredient--span::after {
-          background-image: url(/public/assets/icono-pizza.png);
+          background-image: url(public/assets/icono-pizza.png);
           background-size: 35%;
           top: 10%;
           transform: translate(45%);
